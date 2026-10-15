@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f4f6fb; color: #1f2937; }
+.topo { display: flex; justify-content: space-between; align-items: center; padding: 14px 24px; background: #1e3a8a; }
+.topo a { color: #fff; text-decoration: none; margin-left: 16px; }
+.topo .marca { font-weight: 700; font-size: 1.2rem; margin-left: 0; }
+.conteudo { max-width: 800px; margin: 32px auto; padding: 0 16px; }
+.cartoes { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 24px; }
+.cartao { background: #fff; padding: 20px; border-radius: 10px; text-decoration: none; color: inherit; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+.cartao:hover { box-shadow: 0 4px 12px rgba(0,0,0,.15); }
+form p { display: flex; flex-direction: column; gap: 4px; }
+input { padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; }
+button { padding: 10px 20px; background: #1e3a8a; color: #fff; border: 0; border-radius: 6px; cursor: pointer; }
+.sucesso { background: #dcfce7; padding: 10px; border-radius: 6px; }

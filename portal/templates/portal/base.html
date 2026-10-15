@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Sistema Escolar{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'portal/style.css' %}">
+</head>
+<body>
+    <header class="topo">
+        <a class="marca" href="/">Sistema Escolar</a>
+        <nav>
+            <a href="/">Início</a>
+            <a href="/cadastro/">Cadastro de professor</a>
+            <a href="/admin/">Admin</a>
+        </nav>
+    </header>
+    <main class="conteudo">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

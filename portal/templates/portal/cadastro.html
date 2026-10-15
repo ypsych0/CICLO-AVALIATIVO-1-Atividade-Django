@@ -1,0 +1,13 @@
+{% extends 'portal/base.html' %}
+
+{% block title %}Cadastro de Professor{% endblock %}
+
+{% block content %}
+<h1>Cadastro de Professor</h1>
+{% if salvo %}<p class="sucesso">Professor cadastrado com sucesso!</p>{% endif %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Salvar</button>
+</form>
+{% endblock %}
